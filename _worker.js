@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * YouTube Channel: https://youtube.com/@AM_CLUB
  * GitHub Repository: https://github.com/amclubs
