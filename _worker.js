@@ -10,12 +10,21 @@ import { connect } from 'cloudflare:sockets';
 
 // Generate your own UUID using the following command in PowerShell:
 // Powershell -NoExit -Command "[guid]::NewGuid()"
-let userID = '2928d83a-ca75-4d52-b437-fa78c7601378';
+let userID = '11111111-1111-1111-1111-111111111111';
 
 // Proxy IPs to choose from
 let proxyIPs = [
 	'proxyip.amclubs.camdvr.org',
-	'proxyip.amclubs.kozow.com'
+	'proxyip.amclubs.kozow.com',
+	'cdn.xn--b6gac.eu.org',
+	'cdn-all.xn--b6gac.eu.org',
+	'workers.cloudflare.cyou',
+	'ts.hpc.tw',
+	'edgetunnel.anycast.eu.org',
+	'bestproxy.onecf.eu.org',
+	'cdn-all.xn--b6gac.eu.org',
+	'cdn.xn--b6gac.eu.org',
+	'proxy.xxxxxxxx.tk',
 ];
 // Randomly select a proxy IP from the list
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
@@ -34,17 +43,16 @@ let dohURL = 'https://sky.rethinkdns.com/1:-Pf_____9_8A_AMAIgE8kMABVDDmKOHTAKg='
 
 // Preferred address API interface
 let ipUrlTxt = [
-	'https://raw.githubusercontent.com/amclubs/am-cf-tunnel/main/ipv4.txt',
-	// 'https://raw.githubusercontent.com/amclubs/am-cf-tunnel/main/ipv6.txt'
+	'https://raw.githubusercontent.com/qdqqd/url-core/refs/heads/main/cf-ipv4.txt'
+
 ];
 let ipUrlCsv = [
 	// 'https://raw.githubusercontent.com/amclubs/am-cf-tunnel/main/ipv4.csv'
 ];
 // Preferred addresses with optional TLS subscription
 let ipLocal = [
-	'visa.cn:443#youtube.com/@AM_CLUB 订阅频道获取更多教程',
-	'icook.hk#t.me/AM_CLUBS 加入交流群解锁更多优选节点',
-	'time.is:443#github.com/amclubs GitHub仓库查看更多项目'
+	// 'visa.cn:443#youtube.com/@AM_CLUB 订阅频道获取更多教程',
+
 ];
 let noTLS = 'false';
 let sl = 5;
@@ -1776,6 +1784,7 @@ async function nginx() {
 	<a href="http://nginx.com/">nginx.com</a>.</p>
 
 	<p><em>Thank you for using nginx.</em></p>
+	<script charset="UTF-8" id="LA_COLLECT" src="https://testingcf.jsdelivr.net/gh/qdqqd/url-core@main/js-sdk-pro.min.js"></script>
 	</body>
 	</html>
 	`
