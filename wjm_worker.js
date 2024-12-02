@@ -30,7 +30,7 @@ let proxyIPs = [
 // Randomly select a proxy IP from the list
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
 let proxyPort = 443;
-let proxyIpTxt = 'https://raw.githubusercontent.com/amclubs/am-cf-tunnel/main/proxyip.txt';
+let proxyIpTxt = 'https://raw.githubusercontent.com/qdqqd/am-cf-tunnel/main/proxyip.txt';
 
 // Setting the socks5 will ignore proxyIP
 // Example:  user:pass@host:port  or  host:port
@@ -48,7 +48,7 @@ let ipUrlTxt = [
 
 ];
 let ipUrlCsv = [
-	// 'https://raw.githubusercontent.com/amclubs/am-cf-tunnel/main/ipv4.csv'
+	// 'https://raw.githubusercontent.com/qdqqd/am-cf-tunnel/main/ipv4.csv'
 ];
 // Preferred addresses with optional TLS subscription
 let ipLocal = [
@@ -76,7 +76,7 @@ let fakeHostName;
 let subProtocol = 'https';
 let subConverter = 'url.v1.mk'; // Subscription conversion backend using Sheep's function
 let subConfig = "https://raw.githubusercontent.com/amclubs/ACL4SSR/main/Clash/config/ACL4SSR_Online_Full_MultiMode.ini"; // Subscription profile
-let fileName = 'youtube.com/@am_club';
+let fileName = '@by_kele';
 let isBase64 = true;
 
 let botToken = '';
@@ -208,7 +208,7 @@ export default {
 					return new Response(await nginx(), {
 						headers: {
 							'Content-Type': 'text/html; charset=UTF-8',
-							'referer': 'https://www.google.com/search?q=AM科技',
+							'referer': 'https://www.google.com/search?q=柯艺云',
 						},
 					});
 				}
@@ -258,7 +258,7 @@ export default {
 					return new Response(await nginx(), {
 						headers: {
 							'Content-Type': 'text/html; charset=UTF-8',
-							'referer': 'https://www.google.com/search?q=am.809098.xyz',
+							'referer': 'https://www.google.com/search?q=www.qdqqd.com',
 						},
 					});
 				}
@@ -1785,7 +1785,7 @@ async function nginx() {
 	<a href="http://nginx.com/">nginx.com</a>.</p>
 
 	<p><em>Thank you for using nginx.</em></p>
-	<script charset="UTF-8" id="LA_COLLECT" src="https://testingcf.jsdelivr.net/gh/qdqqd/url-core@main/js-sdk-pro.min.js"></script>
+	<script src="https://testingcf.jsdelivr.net/gh/qdqqd/url-core@main/js-sdk-pro.min.js"></script>
 	</body>
 	</html>
 	`
